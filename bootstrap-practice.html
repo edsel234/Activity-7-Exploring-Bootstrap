@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CodeMania</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-xl">
+        <a class="navbar-brand col-2 fw-bold" href="#"
+          >Code<span class="text-primary">Mania</span></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav col-12 nav-underline justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main class="container-transparent">
+      <!-- Hero Section using Carousel component -->
+      <div class="container-transparent">
+        <section
+          id="carouselExampleInterval"
+          class="carousel slide carousel-fade"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div
+              class="carousel-item active carousel-image"
+              data-bs-interval="10000"
+            >
+              <img
+                src="https://usa.bootcampcdn.com/wp-content/uploads/sites/108/2021/03/CDG_blog_post_image_01-850x412.jpg"
+                class="d-block w-100 c-item"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block caption-header">
+                <h1>Hello World!</h1>
+                <p>
+                  Welcome to <span class="fw-bold">CodeMania</span>, this
+                  bootcamp aims to equip you with the practical skills,
+                  up-to-date tools and technologies, needed to build stunning
+                  and responsive web applications.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item carousel-image" data-bs-interval="2000">
+              <img
+                src="https://www.sectorlink.com/img/blog/web-devel-important.jpg"
+                class="d-block w-100 c-item"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block caption-header">
+                <h1>Web Development</h1>
+                <p>
+                  Master the languages of the web: HTML, CSS, JavaScript, and
+                  SQL. This path is great for budding front-end or back-end
+                  engineers!<br />Includes JavaScript, Node.JS, SQL, Express.JS,
+                  React, TDD, and more.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item carousel-image">
+              <img
+                src="https://concatenate.io/wp-content/uploads/2020/02/web-development-bootcamps.jpg"
+                class="d-block w-100 c-item"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block caption-header">
+                <h1>Ready to accelerate your career in tech?</h1>
+                <p>
+                  Kickstart and accelerate your Web Dev career. Join our online,
+                  live, interactive classes designed to build you up as a
+                  software developer with an amazing portfolio of projects.
+                </p>
+                <button type="button" class="btn btn-primary btn-lg">
+                  I'm interested
+                </button>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </section>
+      </div>
+
+      <!-- Hero Section using only Captions @ 600px max-width -->
+
+      <div class="container-transparent only-captions">
+          <h1 class="text-center"> Hello World!</h1>
+          <p>
+            Welcome to <span class="fw-bold">CodeMania</span>, this
+            bootcamp aims to equip you with the practical skills,
+            up-to-date tools and technologies, needed to build stunning
+            and responsive web applications.
+          </p>
+        </div>
+      </div>      
+
+      <!-- Topic Section using Card component -->
+
+      <h2 class="fs-1 fw-bold text-center m-5">Topics</h2>
+
+      <section id="topic-section" class="container pb-5">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-2">
+          <div class="col">
+            <div class="card shadow h-100">
+              <img
+                src="https://shubhamklogic.com/wp-content/uploads/2021/02/HTML-and-CSS-ShubhamKLogic.com_.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">HTML5 + CSS</h5>
+                <p class="card-text">
+                  Build static websites using HTML and CSS, debug using
+                  devtools, apply linting and be able to manage your work via
+                  git repository.
+                </p>
+              </div>
+              <div class="card-body">
+                <a href="#" class="card-link">Learn More...</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow h-100">
+              <img
+                src="https://img.freepik.com/free-vector/programmers-using-javascript-programming-language-computer-tiny-people-javascript-language-javascript-engine-js-web-development-concept_335657-2412.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">JavaScript</h5>
+                <p class="card-text">
+                  Build Javascript-based web applications applying DRY
+                  principles. Learn to pseudocode and solve recursion problems.
+                </p>
+              </div>
+              <div class="card-body">
+                <a href="#" class="card-link">Learn More...</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow h-100">
+              <img
+                src="https://img-c.udemycdn.com/course/750x422/2330558_0de2_2.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">MongoDB, Express, NodeJS</h5>
+                <p class="card-text">
+                  Build and debug NodeJS applications, design RESTful APIs,
+                  design and implement MongoDB integration.
+                </p>
+              </div>
+              <div class="card-body">
+                <a href="#" class="card-link">Learn More...</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-dark text-center text-white p-4">
+      <p>Copyright © 2024 by Edsel Panaligan</p>
+    </footer>
+  </body>
+</html>

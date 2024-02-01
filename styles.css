@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
+*{
+    font-family: 'Roboto';
+}
+
+
+.carousel-image{
+    height:70vh;
+}
+
+.only-captions{
+    display: none;
+}
+
+@media screen and (max-width:850px) {
+    .carousel-image{
+        height:50vh;
+    }
+}
+
+@media screen and (max-width:600px) {
+    #carouselExampleInterval{
+        display: none;
+    }
+
+    .only-captions{
+        display: block;
+        padding: 3rem;
+        text-align: center;
+        color: white;
+        background-image: url(https://usa.bootcampcdn.com/wp-content/uploads/sites/108/2021/03/CDG_blog_post_image_01-850x412.jpg);
+        background-blend-mode: darken;
+    }
+}
+
+.c-item{
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.5);
+}
+
+.caption-header > h1{
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.caption-header > p{
+    font-size: 1.3rem;
+    font-weight: lighter;
+}
+
+@media screen and (max-width:850px) {
+    .caption-header > h1{
+        font-size:2rem;
+    }
+}
+
+#topic-section img{
+    object-fit: cover;
+    height: 100%;
+}
