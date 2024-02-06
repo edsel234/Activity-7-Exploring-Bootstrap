@@ -4,6 +4,16 @@
     font-family: 'Roboto';
 }
 
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+footer{
+    margin-top: auto;
+}
 
 .carousel-image{
     height:70vh;
